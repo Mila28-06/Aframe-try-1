@@ -13,10 +13,13 @@
          <a-assets>
         <img id="texture" src="images/texture.jpg">
          <img id="sand" src="images/sand.jpg">
+          <img id="wood" src="images/wood.jpg">
         </a-assets>
       <a-sky  color="#6EBAA7">  
       </a-sky>
-      <a-entity camera look-controls position="0 3 0"></a-entity>
+        <a-entity id="rig" position="1 10 1">
+        <a-entity id="camera" camera look-controls></a-entity>
+      </a-entity>
       <a-light type="point" color="orange" position="1 5 1"></a-light>
       <a-light type="point" color="blue" position="5 8 -3"></a-light>
       <a-box id="myBox"
@@ -64,7 +67,8 @@
       color="crimson" 
       height="3" 
       radius="0.9"
-       position="-2 1 -5">
+       position="-2 1 -5"
+       material="src: #wood">
 
       </a-cylinder>
        
@@ -88,7 +92,8 @@
       color="crimson" 
       height="4" 
       radius="0.7"
-       position="-7 1 -5">
+       position="-7 1 -5"
+       material="src: #wood">
 
       </a-cylinder>
     </a-scene>
