@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+
+    <a-scene >
+         <a-assets>
+        <img id="sky" src="sky.png">
+        <img id="texture" src="texture.png">
+        </a-assets>
+      <a-sky  
+      material="src: #sky">  
+      </a-sky>
+      <a-box id="myBox"
+        width="4"
+        height="4"
+        depth="4"
+        color="#ADD8E6" 
+         position="7 3 -5"
+         material="src: #texture"
+        shadow>
+      </a-box>
+      <a-circle
+      width="2"
+      height="2"
+     color="yellow" 
+     radius="5"
+     position="2 3 -7">
+
+      </a-circle>
+      <a-plane
+      rotation="-90 0 0"
+      width="100"
+      height="100"
+      position="1 1  -5"
+      >
+      </a-plane>
+      <a-cone 
+      color="green" 
+      radius-bottom="3" 
+      height="5"
+      radius-top="0"
+       position="-2 5 -5"
+       >
+      </a-cone>
+        <a-cone 
+      color="green" 
+      radius-bottom="3" 
+      height="5"
+      radius-top="0"
+       position="-2 7 -5"
+       >
+      </a-cone>
+      <a-cylinder 
+      color="crimson" 
+      height="3" 
+      radius="0.9"
+       position="-2 1 -5">
+
+      </a-cylinder>
+       
+        <a-cone 
+      color="green" 
+      radius-bottom="2" 
+      height="4"
+      radius-top="0"
+       position="-7 5 -5"
+       >
+      </a-cone>
+        <a-cone 
+      color="green" 
+      radius-bottom="2" 
+      height="4"
+      radius-top="0"
+       position="-7 7 -5"
+       >
+      </a-cone>
+      <a-cylinder 
+      color="crimson" 
+      height="4" 
+      radius="0.7"
+       position="-7 1 -5">
+
+      </a-cylinder>
+    </a-scene>
+  </body>
+</html>
